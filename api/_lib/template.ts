@@ -42,7 +42,7 @@ function getCss() {
         border: solid 2px #aaa;
         border-radius: 12px;
         padding: 24px;
-        color: #222;
+        color: #111;
     }
     
     .title {
@@ -70,7 +70,7 @@ function getCss() {
         gap: 8px;
         align-items: center;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 40px;
     }
 
     .logo {
