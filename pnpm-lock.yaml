@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@types/marked': 4.0.1
+  '@types/node': ^18.6.3
   '@types/puppeteer': 5.4.4
   '@types/puppeteer-core': 5.4.0
   chrome-aws-lambda: 7.0.0
@@ -20,6 +21,7 @@ dependencies:
 
 devDependencies:
   '@types/marked': 4.0.1
+  '@types/node': 18.6.3
   '@types/puppeteer': 5.4.4
   '@types/puppeteer-core': 5.4.0
   typescript: 4.1.5

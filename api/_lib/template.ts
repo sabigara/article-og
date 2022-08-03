@@ -26,8 +26,8 @@ function getCss() {
         display: grid;
         place-items: center;
         box-sizing: border-box;
-        width: 1128px;
-        height: 600px;
+        width: 1200px;
+        height: 630px;
         padding: 62px;
         background: white;
     }
