@@ -29,7 +29,7 @@ function getCss() {
         width: 1200px;
         height: 630px;
         padding: 62px;
-        background: white;
+        background: #6b7eebff;
     }
 
     .card {
@@ -37,12 +37,13 @@ function getCss() {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
+        box-shadow: 6px 12px 32px 8px rgba(0, 0, 0, 0.125);
         width: 100%;
         height: 100%;
-        border: solid 2px #aaa;
-        border-radius: 12px;
-        padding: 24px;
+        border-radius: 24px;
+        padding: 32px 44px;
         color: #111;
+        background: white;
     }
     
     .title {
@@ -70,11 +71,11 @@ function getCss() {
         gap: 8px;
         align-items: center;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 58px;
     }
 
     .logo {
-        max-height: 36px;
+        max-height: 52px;
     }
     `;
 }
