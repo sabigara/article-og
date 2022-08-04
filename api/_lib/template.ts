@@ -29,7 +29,7 @@ function getCss() {
         width: 1200px;
         height: 630px;
         padding: 62px;
-        background: #6b7eebff;
+        background: white;
     }
 
     .card {
@@ -37,13 +37,13 @@ function getCss() {
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
-        box-shadow: 6px 12px 32px 8px rgba(0, 0, 0, 0.125);
         width: 100%;
         height: 100%;
         border-radius: 24px;
         padding: 32px 44px;
         color: #111;
         background: white;
+        filter: drop-shadow(30px 30px #324ACD);
     }
     
     .title {
