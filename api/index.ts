@@ -25,7 +25,7 @@ export default async function handler(
     if (process.env.NODE_ENV === "production") {
       res.setHeader(
         "Cache-Control",
-        `public, immutable, no-transform, s-maxage=31536000, max-age=31536000`
+        `public, immutable, no-transform, s-maxage=31536000`
       );
     }
     res.end(file);
