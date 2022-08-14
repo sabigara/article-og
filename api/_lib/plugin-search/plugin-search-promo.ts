@@ -155,6 +155,9 @@ export function getPluginSearchPromoHtml(
     storeColor,
     storeUrl,
   } = parsedReq;
+  const BASE_URL = process.env.VERCEL_URL;
+  const SCHEMA = process.env.NODE_ENV === "production" ? "https" : "http";
+
   return `<!DOCTYPE html>
 <html>
     <head>
@@ -171,7 +174,7 @@ export function getPluginSearchPromoHtml(
             <div class="card">
                 <div class="title">
                     <span>値下げを検知しました</span>
-                    <img class="hooray" src="/plugin-search/hooray.png"/>
+                    <img class="hooray" src="${SCHEMA}://${BASE_URL}/plugin-search/hooray.png"/>
                 </div>
                 <div class="product">
                     <span class="product-name">${productName}</span>
@@ -194,7 +197,7 @@ export function getPluginSearchPromoHtml(
                         <span>${storeName}</span>
                         <span class="on-sale">で販売中</span>
                     </div>
-                    <img src="/plugin-search/logo.png" class="logo"/>
+                    <img src="${SCHEMA}://${BASE_URL}/plugin-search/logo.png" class="logo"/>
                 </div>
             </div>
         </div>
