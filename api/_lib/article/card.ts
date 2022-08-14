@@ -96,7 +96,7 @@ export function getArticleCardHtml(parsedReq: ParsedRequest) {
     <body>
         <div class="container">
             <div class="card">
-                <div class="title">${emojify(sanitizeHtml(text))}</div>
+                <div class="title">${emojify(sanitizeHtml(text ?? ""))}</div>
                 <div class="footer">
                     <div class="author">${author ? author : ""}</div>
                     ${
