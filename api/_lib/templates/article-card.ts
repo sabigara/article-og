@@ -1,5 +1,5 @@
-import { sanitizeHtml } from "./sanitizer";
-import { ParsedRequest } from "./types";
+import { sanitizeHtml } from "../sanitizer";
+import { ParsedRequest } from "../types";
 const twemoji = require("twemoji");
 const twOptions = { folder: "svg", ext: ".svg" };
 const emojify = (text: string) => twemoji.parse(text, twOptions);
@@ -80,7 +80,7 @@ function getCss() {
     `;
 }
 
-export function getHtml(parsedReq: ParsedRequest) {
+export function getArticleCardHtml(parsedReq: ParsedRequest) {
   const { text, author, logo, service } = parsedReq;
   return `<!DOCTYPE html>
 <html>
